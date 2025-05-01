@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background: #3498db;
-            transition: background-color 0.5s ease;
+            color: #2c3e50;
         }
 
         .container {
@@ -23,17 +23,18 @@
         }
 
         h1, h2 {
-            color: #2c3e50;
             text-align: center;
+            color: #2c3e50;
         }
 
         .section {
             margin-bottom: 20px;
         }
 
-        .toggle-container {
-            text-align: center;
-            margin-top: 20px;
+        .contact, .education, .skills, .languages, .certificates {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         #toggleButton {
@@ -45,43 +46,81 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
         }
 
         #toggleButton:hover {
             background-color: #2980b9;
         }
 
-        #extraInfo {
-            display: none;
+        .extraInfo {
             padding: 15px;
-            margin-top: 10px;
             background: #ecf0f1;
             border-radius: 5px;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            opacity: 0;
-            transform: translateY(20px);
         }
 
-        #extraInfo.show {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .body-bg-transition {
-            transition: background-color 0.5s ease;
+        .extraInfo p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Sabahəddin Rüstəmli</h1>
-        <p><strong>İxtisas:</strong> Kibertəhlükəsizlik və Biznes İdarəçiliyi</p>
+        <p><strong>İxtisas:</strong> Kibertəhlükəsizlik</p>
         
+        <div class="section contact">
+            <h2>Əlaqə</h2>
+            <p>Email: sbahddinrustmli08@gmail.com</p>
+            <p>Telefon: +994 10 371 16 17</p>
+            <p>Ünvan: Bakı, Azərbaycan</p>
+            <p>GitHub: <a href="https://github.com/Sebaheddin007" target="_blank">github.com/Sebaheddin007</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/s%C9%99bah%C9%99ddin-r%C3%BCst%C9%99mli-225116332" target="_blank">linkedin.com/in/səbahəddin-rüstəmli</a></p>
+        </div>
+
+        <div class="section education">
+            <h2>Təhsil</h2>
+            <ul>
+                <li>Azərbaycan Texniki Universiteti – İnformasiya Təhlükəsizliyi (hazırda)</li>
+                <li>Planlaşdırılan mübadilə: Polşa, 1 semestr (2026-ci il)</li>
+                <li>Hədəf: Estoniya Kibertəhlükəsizlik üzrə magistr təhsili</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h2>Bacarıqlar</h2>
+            <ul>
+                <li>Layihə İdarəçiliyi</li>
+                <li>Komanda işi</li>
+                <li>İctimaiyyətlə əlaqələr</li>
+                <li>Zamanın idarə olunması</li>
+                <li>Analitik düşüncə</li>
+                <li>Əla ünsiyyət bacarıqları</li>
+            </ul>
+        </div>
+
+        <div class="section languages">
+            <h2>Dillər</h2>
+            <ul>
+                <li>Azərbaycan dili (ana dili)</li>
+                <li>İngilis dili (yaxşı)</li>
+                <li>Rus dili (orta)</li>
+            </ul>
+        </div>
+
+        <div class="section certificates">
+            <h2>Sertifikatlar</h2>
+            <ul>
+                <li>CompTIA IT Fundamentals (ITF+)</li>
+                <li>IELTS 8</li>
+            </ul>
+        </div>
+
         <div class="toggle-container">
             <button id="toggleButton">Ətraflı Bax</button>
-            <div id="extraInfo">
-                <p>İxtisasım: Kibertəhlükəsizlik və Biznes İdarəçiliyi.</p>
+            <div id="extraInfo" class="extraInfo">
+                <p>İxtisasım: Kibertəhlükəsizlik.</p>
                 <p>Təhsil: AzTU – İnformasiya Təhlükəsizliyi (hazırda).</p>
                 <p>Sertifikatlar: CompTIA ITF+, IELTS 8.</p>
                 <p>Bacarıqlar: Layihə idarəçiliyi, komanda işi, analitik düşüncə.</p>
@@ -98,12 +137,12 @@
             const extraInfo = document.getElementById("extraInfo");
 
             toggleButton.addEventListener("click", () => {
-                if (extraInfo.classList.contains("show")) {
-                    extraInfo.classList.remove("show");
-                    toggleButton.textContent = "Ətraflı Bax";
-                } else {
-                    extraInfo.classList.add("show");
+                if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+                    extraInfo.style.display = "block";
                     toggleButton.textContent = "Bağla";
+                } else {
+                    extraInfo.style.display = "none";
+                    toggleButton.textContent = "Ətraflı Bax";
                 }
             });
         });
