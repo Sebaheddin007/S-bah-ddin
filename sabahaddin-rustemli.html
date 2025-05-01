@@ -3,71 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Sabahəddin Rüstəmli</title>
+    <title>CV - Marketing/Cybersecurity</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #3498db; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; }
-        h1, h2 { color: #2c3e50; }
-        .section { margin-bottom: 20px; }
-        .contact, .education, .skills, .languages, .certificates { background: #ecf0f1; padding: 10px; border-radius: 5px; }
-        ul { padding-left: 20px; }
-        a { color: #2c3e50; text-decoration: none; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #3498db;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .toggle-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #toggleButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #toggleButton:hover {
+            background-color: #2980b9;
+        }
+
+        #extraInfo {
+            display: none;
+            padding: 15px;
+            margin-top: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        #extraInfo.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .body-bg-transition {
+            transition: background-color 0.5s ease;
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Sabahəddin Rüstəmli</h1>
-
-    <div class="section">
-        <p><strong>İxtisas:</strong> Kibertəhlükəsizlik</p>
+    <div class="container">
+        <h1>Sabahəddin Rüstəmli</h1>
+        <p><strong>İxtisas:</strong> Kibertəhlükəsizlik və Biznes İdarəçiliyi</p>
+        
+        <div class="toggle-container">
+            <button id="toggleButton">Ətraflı Bax</button>
+            <div id="extraInfo">
+                <p>İxtisasım: Kibertəhlükəsizlik və Biznes İdarəçiliyi.</p>
+                <p>Təhsil: AzTU – İnformasiya Təhlükəsizliyi (hazırda).</p>
+                <p>Sertifikatlar: CompTIA ITF+, IELTS 8.</p>
+                <p>Bacarıqlar: Layihə idarəçiliyi, komanda işi, analitik düşüncə.</p>
+                <p>GitHub: github.com/Sebaheddin007</p>
+                <p>LinkedIn: linkedin.com/in/səbahəddin-rüstəmli</p>
+                <p>Əlaqə: sbahddinrustmli08@gmail.com</p>
+            </div>
+        </div>
     </div>
 
-    <div class="section contact">
-        <h2>Əlaqə</h2>
-        <p>Email: <a href="mailto:sbahddinrustmli08@gmail.com">sbahddinrustmli08@gmail.com</a></p>
-        <p>Telefon: <a href="tel:+994103711617">+994 10 371 16 17</a></p>
-        <p>Ünvan: Bakı, Azərbaycan</p>
-        <p>GitHub: <a href="https://github.com/Sebaheddin007" target="_blank">github.com/Sebaheddin007</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/s%C9%99bah%C9%99ddin-r%C3%BCst%C9%99mli-225116332" target="_blank">linkedin.com/in/səbahəddin-rüstəmli</a></p>
-    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById("toggleButton");
+            const extraInfo = document.getElementById("extraInfo");
 
-    <div class="section education">
-        <h2>Təhsil</h2>
-        <ul>
-            <li>Azərbaycan Texniki Universiteti – İnformasiya Təhlükəsizliyi (hazırda)</li>
-            <li>Planlaşdırılan mübadilə: Polşa, 1 semestr (2026-ci il)</li>
-            <li>Hədəf: Estoniya Kibertəhlükəsizlik üzrə magistr təhsili</li>
-        </ul>
-    </div>
-
-    <div class="section skills">
-        <h2>Bacarıqlar</h2>
-        <ul>
-            <li>Layihə İdarəçiliyi</li>
-            <li>Komanda işi</li>
-            <li>İctimaiyyətlə əlaqələr</li>
-            <li>Zamanın idarə olunması</li>
-            <li>Analitik düşüncə</li>
-            <li>Əla ünsiyyət bacarıqları</li>
-        </ul>
-    </div>
-
-    <div class="section languages">
-        <h2>Dillər</h2>
-        <ul>
-            <li>Azərbaycan dili (ana dili)</li>
-            <li>İngilis dili (yaxşı)</li>
-            <li>Rus dili (orta)</li>
-        </ul>
-    </div>
-
-    <div class="section certificates">
-        <h2>Sertifikatlar</h2>
-        <ul>
-            <li>CompTIA IT Fundamentals (ITF+)</li>
-            <li>IELTS 8</li>
-        </ul>
-    </div>
-</div>
+            toggleButton.addEventListener("click", () => {
+                if (extraInfo.classList.contains("show")) {
+                    extraInfo.classList.remove("show");
+                    toggleButton.textContent = "Ətraflı Bax";
+                } else {
+                    extraInfo.classList.add("show");
+                    toggleButton.textContent = "Bağla";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
