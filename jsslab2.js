@@ -1,6 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("toggleButton");
+    const extraInfo = document.getElementById("extraInfo");
 
-document.getElementById("cvBtn").addEventListener("click", function() {
-    const messageEl = document.getElementById("cvMessage");
-    messageEl.textContent = "iOS Developer, 3 il təcrübə, Paşa Bank-da çalışır. AZTU məzunu, Swift və SwiftUI üzrə ixtisaslaşıb.";
-    messageEl.style.display = "block";
+    toggleButton.addEventListener("click", () => {
+        if (extraInfo.style.display === "none") {
+            extraInfo.style.display = "block";
+            toggleButton.textContent = "Bağla";
+        } else {
+            extraInfo.style.display = "none";
+            toggleButton.textContent = "Ətraflı Bax";
+        }
+    });
 });
