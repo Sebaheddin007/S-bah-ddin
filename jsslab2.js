@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const extraInfo = document.getElementById("extraInfo");
 
     toggleButton.addEventListener("click", () => {
-        if (extraInfo.style.display === "none") {
+        if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
             extraInfo.style.display = "block";
             toggleButton.textContent = "Bağla";
         } else {
