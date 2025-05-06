@@ -4,83 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rüstəmli Səbahəddin - CV</title>
-  <link rel="stylesheet" href="style.css.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
       <div class="photo">
-        <img src="sabo.png.png" alt="Rüstəmli Səbahəddin" />
+        <img src="sabo.png" alt="Rüstəmli Səbahəddin" />
       </div>
-      <div class="section">
-        <h2>Əlaqə</h2>
-        <p>📞 010 371 16 17</p>
-        <p>✉️ sebaheddinrustemli08@gmail.com</p>
-        <p>📍 Bakı şəhəri, Nəsimi rayonu, Cavadxan 73</p>
+      <div class="section toggle-section">
+        <h2 onclick="toggleSection(this)">Əlaqə</h2>
+        <div class="content">
+          <p>📞 010 371 16 17</p>
+          <p>✉ sebaheddinrustemli08@gmail.com</p>
+          <p>📍 Bakı şəhəri, Nəsimi rayonu, Cavadxan 73</p>
+        </div>
       </div>
-      <div class="section">
-        <h2>Təhsil</h2>
-        <p><strong>2024 - davam edir</strong><br />
-        Azərbaycan Texniki Universiteti<br />
-        Informasiya Təhlükəsizliyi (Bakalavr)</p>
-      </div>
-      <div class="section">
-        <h2>Əsas Bacarıqlar</h2>
-        <ul>
-          <li>Şəbəkə təhlükəsizliyi, Firewall konfiqurasiyası</li>
-          <li>Sistem zəifliklərinin skanı və analizi</li>
-          <li>Linux və Windows təhlükəsizlik konfiqurasiyası</li>
-          <li>Git və GitHub ilə versiya nəzarəti</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>Qeyri-rəsmi Fəaliyyət</h2>
-        <p><strong>Kibertəhlükəsizlik Klubunun üzvü</strong><br />
-        Təlimlərdə iştirak və praktiki simulyasiyalar</p>
+      <div class="section toggle-section">
+        <h2 onclick="toggleSection(this)">Təhsil</h2>
+        <div class="content">
+          <p><strong>2024 - davam edir</strong><br />
+          Azərbaycan Texniki Universiteti<br />
+          Informasiya Təhlükəsizliyi (Bakalavr)</p>
+        </div>
       </div>
     </div>
     <div class="main">
       <h1>RÜSTƏMLİ SƏBAHƏDDİN</h1>
       <h3>Informasiya Təhlükəsizliyi Tələbəsi</h3>
-      <div class="section">
-        <h2>Haqqımda</h2>
-        <p>“Təhlükəsizlik texnologiyalarında bacarıqlı olmaq və dünyada informasiya təhlükəsizliyinə töhfə vermək üçün çalışıram.”</p>
-      </div>
-      <div class="section">
-        <h2>Soft Bacarıqlar</h2>
-        <ul>
-          <li>Analitik düşüncə və problem həlli</li>
-          <li>Diqqətlilik və məxfilik prinsipləri</li>
-          <li>Komanda ilə işləmək bacarığı</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>Layihələr</h2>
-        <ul>
-          <li>Web Təhlükəsizlik Analizi (Şəxsi Layihə)</li>
-          <li>HTML/JS əsaslı şifrələmə aləti</li>
-          <li>JavaScript ilə mətn şifrələmə və deşifrə</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>Sertifikatlar</h2>
-        <ul>
-          <li>Introduction to Cyber Security – Cisco</li>
-          <li>Cybersecurity Essentials – Cisco</li>
-          <li>Google IT Support: Security – Coursera</li>
-        </ul>
-      </div>
-      <div class="section">
-        <h2>Hobbilər</h2>
-        <ul>
-          <li>Texnologiya blogları oxumaq</li>
-          <li>Şahmat və strategiya oyunları</li>
-          <li>Mini layihələr – HTML, Linux, skriptlər</li>
-          <li>VirtualBox və əməliyyat sistemləri</li>
-          <li>Sosial mühəndislik öyrənmək</li>
-        </ul>
+      <div class="section toggle-section">
+        <h2 onclick="toggleSection(this)">Haqqımda</h2>
+        <div class="content">
+          <p>“Təhlükəsizlik texnologiyalarında bacarıqlı olmaq və dünyada informasiya təhlükəsizliyinə töhfə vermək üçün çalışıram.”</p>
+        </div>
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
