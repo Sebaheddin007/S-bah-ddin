@@ -1,4 +1,9 @@
-function toggleSection(element) {
-  var content = element.nextElementSibling;
-  content.style.display = content.style.display === "block" ? "none" : "block";
-}
+document.querySelectorAll('.menu li').forEach(item => {
+  item.addEventListener('click', () => {
+    const targetId = item.getAttribute('data-target');
+    document.querySelectorAll('.content').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(targetId).classList.add('active');
+  });
+});
