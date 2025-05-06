@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rüstəmli Səbahəddin - CV</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="cvpicture3.jpg" alt="Rüstəmli Səbahəddin" class="circle-image">
+            <h3>Təhsil</h3>
+            <p id="education">AZƏRBAYCAN TEXNIKI UNİVERSITETİ (AZTU)<br>Informasiya Təhlükəsizliyi bakalavr<br>2024 davam edir</p>
+            <h3>Əsas Bacarıqlar</h3>
+            <ul id="skills">
+                <li>Şəbəkə təhlükəsizliyi, Firewall konfiqurasiyası</li>
+                <li>Sistem zəifliklərinin skan edilməsi və analiz</li>
+                <li>Linux və Windows təhlükəsizlik konfiqurasiyası</li>
+                <li>Git və GitHub ilə versiya nəzarəti</li>
+            </ul>
+            <h3>Əlaqə</h3>
+            <p id="contact-info">
+                010 371 16 17<br>
+                sebaheddinrustemli08@gmail.com<br>
+                Bakı şəhəri Nəsimi rayonu Cavadxan 73
+            </p>
+        </div>
+        <div class="right">
+            <h1>RÜSTƏMLİ SƏBAHƏDDİN</h1>
+            <h2 onclick="toggleVisibility('soft-skills')">Soft Bacarıqlar</h2>
+            <ul id="soft-skills">
+                <li>Analitik düşüncə və problem həll etmə</li>
+                <li>Diqqətlilik və məxfilik prinsiplərinə riayət</li>
+                <li>Komanda ilə işləmək bacarığı</li>
+            </ul>
+            <h2 onclick="toggleVisibility('projects')">Layihələr</h2>
+            <ul id="projects">
+                <li>Web Təhlükəsizlik Analizi (Şəxsi Layihə)</li>
+                <li>HTML/JS əsaslı sadə şifrələmə aləti</li>
+                <li>JavaScript vasitəsilə mətn şifrələmə və deşifrə funksiyaları</li>
+            </ul>
+            <h2 onclick="toggleVisibility('certificates')">Sertifikatlar</h2>
+            <ul id="certificates">
+                <li>Introduction to Cyber Security - Cisco Networking Academy</li>
+                <li>Cybersecurity Essentials - Cisco</li>
+                <li>Google IT Support: Security (Coursera)</li>
+            </ul>
+            <div class="edit-controls">
+                <button id="add-btn">Yeni Mətn Əlavə Et</button>
+                <button id="edit-btn">Mətni Redaktə Et</button>
+                <button id="delete-btn">Mətni Sil</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
