@@ -29,15 +29,20 @@ body {
   display: block;
   margin: 0 auto 20px;
 }
-.sidebar .content {
-  display: none;
+.sidebar .menu,
+.main .menu {
+  list-style: none;
+  padding: 0;
 }
-.toggle-section h2 {
+.sidebar .menu li,
+.main .menu li {
+  padding: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
-.toggle-section .content {
-  display: none;
-  transition: all 0.3s ease-in-out;
+.sidebar .menu li:hover,
+.main .menu li:hover {
+  background: #3f4a65;
 }
 .main {
   width: 65%;
@@ -46,18 +51,28 @@ body {
 }
 .main h1 {
   color: #2f3a50;
+  font-size: 28px;
+  margin-bottom: 5px;
 }
 .main h3 {
   color: #666;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-.main .content {
+.content {
   display: none;
+  margin-top: 20px;
+}
+.content.active {
+  display: block;
 }
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
-  .sidebar, .main {
+  .sidebar,
+  .main {
     width: 100%;
   }
 }
