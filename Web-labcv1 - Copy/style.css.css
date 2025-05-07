@@ -4,7 +4,6 @@ body {
   padding: 0;
   background: #f4f4f4;
 }
-
 .container {
   display: flex;
   max-width: 1000px;
@@ -14,7 +13,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .sidebar {
   width: 35%;
   background-color: #2f3a50;
@@ -22,7 +20,6 @@ body {
   padding: 30px;
   box-sizing: border-box;
 }
-
 .photo img {
   width: 140px;
   height: 140px;
@@ -32,58 +29,51 @@ body {
   display: block;
   margin: 0 auto 20px;
 }
-
-.sidebar .menu,
-.main .menu {
-  list-style: none;
-  padding: 0;
+.sidebar .section {
+  margin-bottom: 25px;
 }
-
-.sidebar .menu li,
-.main .menu li {
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
+.sidebar h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
-
-.sidebar .menu li:hover,
-.main .menu li:hover {
-  background: #3f4a65;
+.sidebar ul {
+  list-style: disc;
+  padding-left: 20px;
 }
-
 .main {
   width: 65%;
   padding: 30px;
   box-sizing: border-box;
 }
-
 .main h1 {
   color: #2f3a50;
   font-size: 28px;
   margin-bottom: 5px;
 }
-
 .main h3 {
   color: #666;
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 20px;
 }
-
-.content {
-  display: none;
-  margin-top: 20px;
+.main .section {
+  margin-bottom: 20px;
 }
-
-.content.active {
-  display: block;
+.main h2 {
+  color: #2f3a50;
+  border-bottom: 2px solid #2f3a50;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
-
+.main ul {
+  list-style: square;
+  padding-left: 20px;
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
-
   .sidebar,
   .main {
     width: 100%;
