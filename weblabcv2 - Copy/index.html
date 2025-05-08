@@ -42,11 +42,20 @@
     <div class="main">
       <h1>RÜSTƏMLİ SƏBAHƏDDİN</h1>
       <h3>Informasiya Təhlükəsizliyi Tələbəsi</h3>
-      <div class="section collapsible">
+      <div class="menu">
+        <ul>
+          <li data-target="about">Haqqımda</li>
+          <li data-target="skills">Soft Bacarıqlar</li>
+          <li data-target="projects">Layihələr</li>
+          <li data-target="certificates">Sertifikatlar</li>
+          <li data-target="hobbies">Hobbilər</li>
+        </ul>
+      </div>
+      <div id="about" class="section content active">
         <h2>Haqqımda</h2>
         <p>“Təhlükəsizlik texnologiyalarında bacarıqlı olmaq və dünyada informasiya təhlükəsizliyinə töhfə vermək üçün çalışıram.”</p>
       </div>
-      <div class="section collapsible">
+      <div id="skills" class="section content">
         <h2>Soft Bacarıqlar</h2>
         <ul>
           <li>Analitik düşüncə və problem həlli</li>
@@ -54,7 +63,7 @@
           <li>Komanda ilə işləmək bacarığı</li>
         </ul>
       </div>
-      <div class="section collapsible">
+      <div id="projects" class="section content">
         <h2>Layihələr</h2>
         <ul>
           <li>Web Təhlükəsizlik Analizi (Şəxsi Layihə)</li>
@@ -62,7 +71,7 @@
           <li>JavaScript ilə mətn şifrələmə və deşifrə</li>
         </ul>
       </div>
-      <div class="section collapsible">
+      <div id="certificates" class="section content">
         <h2>Sertifikatlar</h2>
         <ul>
           <li>Introduction to Cyber Security – Cisco</li>
@@ -70,7 +79,7 @@
           <li>Google IT Support: Security – Coursera</li>
         </ul>
       </div>
-      <div class="section collapsible">
+      <div id="hobbies" class="section content">
         <h2>Hobbilər</h2>
         <ul>
           <li>Texnologiya blogları oxumaq</li>
@@ -82,15 +91,6 @@
       </div>
     </div>
   </div>
-  <script>
-    document.querySelectorAll('.collapsible').forEach(section => {
-      const content = section.querySelector(':not(h2)');
-      content.style.display = 'none';
-      section.querySelector('h2').style.cursor = 'pointer';
-      section.querySelector('h2').addEventListener('click', () => {
-        content.style.display = content.style.display === 'none' ? 'block' : 'none';
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
