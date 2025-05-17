@@ -48,15 +48,15 @@ body {
 .menu ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  margin: 0;
+  display: block;
 }
 .menu li {
   background-color: #e0e0e0;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
+  margin-bottom: 8px;
 }
 .menu li:hover {
   background-color: #d0d0d0;
