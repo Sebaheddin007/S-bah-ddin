@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rüstəmli Səbahəddin - CV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="photo">
+        <img src="sabo.png" alt="Rüstəmli Səbahəddin" />
+      </div>
+      <div class="section" contenteditable="true" id="contact">
+      </div>
+      <div class="section" contenteditable="true" id="education">
+      </div>
+      <div class="section" contenteditable="true" id="skills-main">
+      </div>
+      <div class="section" contenteditable="true" id="languages">
+      </div>
+    </div>
+    <div class="main">
+      <h1 contenteditable="true" id="name"></h1>
+      <h3 contenteditable="true" id="title"></h3>
+      <div class="menu">
+        <ul>
+          <li data-target="about">Haqqımda</li>
+          <li data-target="skills">Soft Bacarıqlar</li>
+          <li data-target="projects">Layihələr</li>
+          <li data-target="certificates">Sertifikatlar</li>
+          <li data-target="hobbies">Hobbilər</li>
+          <li data-target="activity">Qeyri-rəsmi Fəaliyyət</li>
+        </ul>
+      </div>
+      <div id="about" class="section content active" contenteditable="true">
+      </div>
+      <div id="skills" class="section content" contenteditable="true">
+      </div>
+      <div id="projects" class="section content" contenteditable="true">
+      </div>
+      <div id="certificates" class="section content" contenteditable="true">
+      </div>
+      <div id="hobbies" class="section content" contenteditable="true">
+      </div>
+      <div id="activity" class="section content" contenteditable="true">
+      </div>
+
+      <div class="buttons">
+        <button id="saveBtn">Yadda saxla</button>
+        <button id="addItemBtn">Yeni element əlavə et</button>
+      </div>
+    </div>
+  </div>
+  <script src="script5.js"></script>
+  <script src="data_json.json"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "name": "RÜSTƏMLİ SƏBAHƏDDİN",
+  "title": "Informasiya Təhlükəsizliyi Tələbəsi",
+  "contact": {
+    "title": "Əlaqə",
+    "items": [
+      "📞 010 371 16 17",
+      "✉ sebaheddinrustemli08@gmail.com",
+      "📍 Bakı şəhəri, Nəsimi rayonu, Cavadxan 73"
+    ]
+  },
+  "education": {
+    "title": "Təhsil",
+    "items": [
+      "<strong>2024 - davam edir</strong><br />Azərbaycan Texniki Universiteti<br />Informasiya Təhlükəsizliyi (Bakalavr)"
+    ]
+  },
+  "skillsMain": {
+    "title": "Əsas Bacarıqlar",
+    "items": [
+      "Şəbəkə təhlükəsizliyi, Firewall konfiqurasiyası",
+      "Sistem zəifliklərinin skanı və analizi",
+      "Linux və Windows təhlükəsizlik konfiqurasiyası",
+      "Git və GitHub ilə versiya nəzarəti"
+    ]
+  },
+  "languages": {
+    "title": "Dil Bilikləri",
+    "items": [
+      "Azərbaycan dili – Ana dili",
+      "İngilis dili – Orta səviyyə (B1-B2)",
+      "Rus dili – Başlanğıc səviyyə"
+    ]
+  },
+  "about": {
+    "title": "Haqqımda",
+    "content": "<p>\"Təhlükəsizlik texnologiyalarında bacarıqlı olmaq və dünyada informasiya təhlükəsizliyinə töhfə vermək üçün çalışıram.\"</p>"
+  },
+  "skills": {
+    "title": "Soft Bacarıqlar",
+    "items": [
+      "Analitik düşüncə və problem həlli",
+      "Diqqətlilik və məxfilik prinsipləri",
+      "Komanda ilə işləmək bacarığı"
+    ]
+  },
+  "projects": {
+    "title": "Layihələr",
+    "items": [
+      "Web Təhlükəsizlik Analizi (Şəxsi Layihə)",
+      "HTML/JS əsaslı şifrələmə aləti",
+      "JavaScript ilə mətn şifrələmə və deşifrə"
+    ]
+  },
+  "certificates": {
+    "title": "Sertifikatlar",
+    "items": [
+      "Introduction to Cyber Security – Cisco",
+      "Cybersecurity Essentials – Cisco",
+      "Google IT Support: Security – Coursera"
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbilər",
+    "items": [
+      "Texnologiya blogları oxumaq",
+      "Şahmat və strategiya oyunları",
+      "Mini layihələr – HTML, Linux, skriptlər",
+      "VirtualBox və əməliyyat sistemləri",
+      "Sosial mühəndislik öyrənmək"
+    ]
+  },
+  "activity": {
+    "title": "Qeyri-rəsmi Fəaliyyət",
+    "content": "<p><strong>Kibertəhlükəsizlik Klubunun üzvü</strong><br />Təlimlərdə iştirak və praktiki simulyasiyalar</p>"
+  }
+}
