@@ -12,7 +12,7 @@
   "education": {
     "title": "Təhsil",
     "items": [
-      "<strong>2024 - davam edir</strong><br />Azərbaycan Texniki Universiteti<br />Informasiya Təhlükəsizliyi (Bakalavr)"
+      "<strong>2024 - davam edir</strong><br>Azərbaycan Texniki Universiteti<br>Informasiya Təhlükəsizliyi (Bakalavr)"
     ]
   },
   "skillsMain": {
@@ -72,6 +72,6 @@
   },
   "activity": {
     "title": "Qeyri-rəsmi Fəaliyyət",
-    "content": "<p><strong>Kibertəhlükəsizlik Klubunun üzvü</strong><br />Təlimlərdə iştirak və praktiki simulyasiyalar</p>"
+    "content": "<p><strong>Kibertəhlükəsizlik Klubunun üzvü</strong><br>Təlimlərdə iştirak və praktiki simulyasiyalar</p>"
   }
 }
